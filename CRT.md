@@ -18,8 +18,6 @@ x\equiv a_k\pmod {m_k}
 \right.
 $$
 
-$\mathrm{CRT}$ 可以求出一个
-
 ## 扩展中国剩余定理
 
 
@@ -32,5 +30,5 @@ $\mathrm{CRT}$ 可以求出一个
 [1]:https://baike.baidu.com/item/%E5%AD%99%E5%AD%90%E5%AE%9A%E7%90%86/2841597?fr=aladdin&fromid=11200132&fromtitle=%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzE3NjEyOV19
+eyJoaXN0b3J5IjpbMzU0NDc1NTU3XX0=
 -->
