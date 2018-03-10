@@ -1,3 +1,13 @@
+---
+layout: post
+title: Codeforces Round #469 (Div. 2)
+tags:
+- CodeForces
+categories:
+- OI
+mathjax: true
+---
+
 # Codeforces Round #469 (Div. 2)
 
 $\mathrm{pupil}$ 过了 $\mathrm{A,B}$ 已经知足啦！
@@ -159,5 +169,5 @@ $\mathrm{pupil}$ 真的只会做 $\mathrm{A,B}$ 啊！
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjM3NDE3ODhdfQ==
+eyJoaXN0b3J5IjpbLTE1ODgwMDA4NSwtMjA2Mzc0MTc4OF19
 -->
