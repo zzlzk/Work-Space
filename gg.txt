@@ -1,4 +1,4 @@
-$\mathrm{M\ddot{o}bius\;\;inversion\;\;formula}$
+$\mathrm{M\ddot{o}bius\;\;inversion\;\;formula\;and\;}$
 
 $$\mathcal{Part\;1:}\;\mathrm{BASE}$$
 
@@ -28,5 +28,5 @@ $2.\;\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}(i,j)$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTEyNTY5N119
+eyJoaXN0b3J5IjpbLTE3Mjk5ODc3OTZdfQ==
 -->
