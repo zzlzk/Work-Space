@@ -1,4 +1,4 @@
-$\mathrm{M\ddot{o}bius\;\;inversion\;\;formula\;and\;}$
+$\mathrm{Math\;Theory}$
 
 $$\mathcal{Part\;1:}\;\mathrm{BASE}$$
 
@@ -10,7 +10,11 @@ $3.\;f(n)=\sum\limits_{n|d}g(d)\rightarrow g(n)=\sum\limits_{n|d}\mu(\frac d n)f
 
 $4.\;\sum\limits_{d|n}\mu(d)=[n=1]$
 
-$\mathcal{{\small TIPS}:\;}f,g\mathrm{\;in \;2,3\;are\;number\;theoretic\;functions.}$
+$5.\;\varphi(n)=\sum\limits_{i=1}^{n}[(i,n)=1]\;\mathrm{or}\;n=\prod\limits_{i=1}^{m}{p_i}^{k_i}(\forall i,p_i\;\mathrm{is\;a\;prime}),\varphi(n)=n\prod\limits_{i=1}^{m}(1-\frac{1}{p_i})$
+
+$6.\;\sum\limits_{d|n}\varphi(d)=n$
+
+$\mathcal{{[\small TIPS}:\;}f,g\mathrm{\;in \;2,3\;are\;number\;theoretic\;functions.]}$
 
 $$\mathcal{Part\;2:}\mathrm{\;Easy\;problems}$$
 
@@ -26,7 +30,32 @@ $$\begin{aligned}
 
 $2.\;\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}(i,j)$
 
+$$\begin{aligned}
+&\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}(i,j)\;\;\;(6.\rightarrow(i,j)=\sum\limits_{d|(i,j)}\varphi(d))
+\\=&\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}\sum\limits_{d|(i,j)}\varphi(d)
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}\varphi(d)\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}1
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}\varphi(d)\lfloor\frac n d\rfloor\lfloor\frac m d\rfloor
+\end{aligned}$$
 
+$$\mathcal{Part\;3:}\mathrm{Difficult\;problems}$$
+
+$1.\;\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}[i,j]$
+
+$$\begin{aligned}
+&\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}[i,j]
+\\=&\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}\frac{ij}{(i,j)}
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}\frac{ij}{d}[(i,j)=d]
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}\frac{ij\cdot d^2}{d}[(i,j)=1]
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}d\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}ij[(i,j)=1]\;\;(4.\rightarrow[(i,j)=1]=\sum\limits_{d|(i,j)}\mu(d))
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}d\sum\limits_{i=1}^{n/d}\sum\limits_{j=1}^{m/d}ij\sum\limits_{d'|(i,j)}\mu(d')
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}d\sum\limits_{d'=1}^{\mathrm{min}(n/d,m/d)}\mu(d')\sum\limits_{i=1}^{n/d}i[d'|i]\sum\limits_{j=1}^{m/d}j[d'|j]
+\\=&\sum\limits_{d=1}^{\mathrm{min}(n,m)}d\sum\limits_{d'=1}^{\mathrm{min}(n/d,m/d)}\mu(d')d'^2\sum\limits_{i=1}^{n/d/d'}i\sum\limits_{j=1}^{m/d/d'}j
+\end{aligned}$$
+
+$\small\left\{\begin{aligned}S(n)&=\sum\limits_{i=1}^{n}i={\frac{n(n+1)}2}\;(\mathrm{A.P})\\sum(n,m)&=\sum\limits_{i=1}^{n}i\sum\limits_{j=1}^{m}j=\sum\limits_{i=1}^{n}iS(m)=S(n)*S(m)=\frac{n(n+1)m(m+1)}4\end{aligned}\right.$
+$$\downarrow$$
+
+$$\small\sum\limits_{i=1}^{n/d/d'}i\sum\limits_{j=1}^{m/d/d'}j=sum(\lfloor\frac{n}{dd'}\rfloor,\lfloor\frac{m}{dd'}\rfloor)$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk5ODc3OTZdfQ==
+eyJoaXN0b3J5IjpbMTE1MDE0MDExMV19
 -->
